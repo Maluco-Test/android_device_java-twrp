@@ -8,6 +8,7 @@
 LOCAL_PATH := device/motorola/java
 
 # A/B
+PRODUCT_USE_DYNAMIC_PARTITIONS := true
 TARGET_IS_VAB := true
 ENABLE_VIRTUAL_AB := true
 AB_OTA_POSTINSTALL_CONFIG += \
