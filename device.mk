@@ -28,7 +28,15 @@ PRODUCT_PACKAGES += \
     f2fs_io \
     check_f2fs
 
+
 # Boot control HAL
+
+PRODUCT_PACKAGES += \
+    bootctrl.default \
+    bootctrl.unisoc \
+    bootctrl.ums512.recovery
+
+
 PRODUCT_PACKAGES += \
     android.hardware.boot@1.0-impl \
     android.hardware.boot@1.0-service
@@ -47,3 +55,5 @@ PRODUCT_PACKAGES += \
     update_engine_sideload \
     checkpoint_gc
 
+PRODUCT_PACKAGES_DEBUG += \
+    bootctl
