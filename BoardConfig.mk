@@ -86,14 +86,6 @@ VENDOR_SECURITY_PATCH := 2022-07-05
 
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 
-# TWRP Configuration
-TW_THEME := portrait_hdpi
-TW_EXTRA_LANGUAGES := true
-TW_SCREEN_BLANK_ON_BOOT := true
-TW_INPUT_BLACKLIST := "hbtp_vm"
-TW_USE_TOOLBOX := true
-TW_INCLUDE_REPACKTOOLS := true
-
 # Additional Libraries
 TARGET_RECOVERY_DEVICE_MODULES += \
     libandroidicu
@@ -109,7 +101,8 @@ TW_RECOVERY_ADDITIONAL_RELINK_LIBRARY_FILES += \
     $(TARGET_OUT_SHARED_LIBRARIES)/libion.so \
     $(TARGET_OUT_SHARED_LIBRARIES)/libxml2.so
 
-
-
 # Inherit partitions flags
 include device/motorola/java/partitions.mk
+
+#flags
+include device/motorolas/java/twrpflags.mk
