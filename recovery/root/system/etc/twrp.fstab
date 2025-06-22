@@ -1,16 +1,28 @@
 # <mount_point>      <fstype>  <device>        <device2>                  <flags>
+# Dynamic partitions
 /system_image          emmc      /dev/block/mapper/system_a                       flags=display="System image";backup=1;flashimg=1
+/system          ext4     /dev/block/mapper/system_a                       flags=display="System";wipeingui
 /vendor_image          emmc      /dev/block/mapper/vendor_a                       flags=display="Vendor image";backup=1;flashimg=1
+/vendor          ext4      /dev/block/mapper/vendor_a                       flags=display="Vendor";wipeingui
 /product_image          emmc      /dev/block/mapper/product_a                      flags=display="Product image";backup=1;flashimg=1
+/product          ext4      /dev/block/mapper/product_a                      flags=display="Product";wipeingui
 /system_ext_image          emmc      /dev/block/mapper/system_ext_a                   flags=display="System_ext image";backup=1;flashimg=1
+/system_ext          ext4      /dev/block/mapper/system_ext_a                   flags=display="System_ext";wipeingui
+
 /super          emmc      /dev/block/by-name/super                   flags=display="Super image";backup=1;flashimg=1
+
+#AVB
 /vbmeta                emmc     /dev/block/by-name/vbmeta                flags=display=vbmeta;slotselect;backup=1;flashimg=1
 /vbmeta_system         emmc     /dev/block/by-name/vbmeta_system         flags=display=vbmeta_system;slotselect;backup=1
 /vbmeta_vendor         emmc     /dev/block/by-name/vbmeta_vendor         flags=display=vbmeta_vendor;slotselect;backup=1
 /vbmeta_product        emmc     /dev/block/by-name/vbmeta_product        flags=display=vbmeta_product;slotselect;backup=1
 /vbmeta_system_ext     emmc     /dev/block/by-name/vbmeta_system_ext     flags=display=vbmeta_system_ext;slotselect;backup=1
 /boot                  emmc     /dev/block/by-name/boot_a                  flags=display=boot;slotselect;backup=1;flashimg=1
+
+#userdata
 /data                 f2fs     /dev/block/by-name/userdata           
+
+#nt know
 /mnt/vendor            ext4     /dev/block/by-name/prodnv                flags=display=vendor;backup=1;flashimg=1
 
 # Removable storage
