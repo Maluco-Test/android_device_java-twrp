@@ -28,8 +28,8 @@ Front Camera | 13 MP, f/2.2, (wide), 1/3.1", 1.12µm
 - [X] Wipe data
 - [ ] vibration
 - [?] fastbootD
-
-
+- [ ] Boot
+ 
 # base for this TWRP tree
 
 <a href="https://github.com/GitFASTBOOT/android_device_realme_RMX3261"> GitFastboot </a> </br>
