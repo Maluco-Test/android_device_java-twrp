@@ -26,7 +26,7 @@ Front Camera | 13 MP, f/2.2, (wide), 1/3.1", 1.12µm
 - [X] MTP
 - [X] touch
 - [X] advanced Wipe
-- [ ]Format data(pbrp)
+- [ ] Format data(pbrp)
 - [ ] vibration
 - [ ] fastbootD
 - [X] reboot to system
