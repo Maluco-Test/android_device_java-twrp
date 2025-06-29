@@ -31,7 +31,7 @@
 /dev/block/by-name/logo                  /logo               emmc    defaults    defaults
 /dev/block/by-name/fbootlogo             /fbootlogo          emmc    defaults    defaults
 
-
+/dev/block/bootdevice/by-name/system /system ext4 ro wait
 system /system ext4 ro,barrier=1 wait,avb=vbmeta_system,logical,first_stage_mount,slotselect
 system_ext /system_ext ext4 ro,barrier=1 wait,avb=vbmeta_system_ext,logical,first_stage_mount,slotselect
 vendor /vendor ext4 ro,barrier=1 wait,avb=vbmeta_vendor,logical,first_stage_mount,slotselect
