@@ -35,6 +35,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     bootctrl.default \
     bootctrl.unisoc \
+    bootctrl.ums512 \
     bootctrl.ums512.recovery
 
 
@@ -42,11 +43,6 @@ PRODUCT_PACKAGES += \
     android.hardware.boot@1.0-impl \
     android.hardware.boot@1.0-service
 
-PRODUCT_STATIC_BOOT_CONTROL_HAL := \
-    bootctrl.ums512 \
-    libgptutils \
-    libz \
-    libcutils
 
 PRODUCT_PACKAGES += \
     otapreopt_script \
@@ -54,15 +50,19 @@ PRODUCT_PACKAGES += \
     update_engine \
     update_verifier \
     update_engine_sideload \
+    libgptutils \
+    libz \
+    libcutils \
     checkpoint_gc
 
 PRODUCT_PACKAGES_DEBUG += \
-    bootctl
+    bootctl \
+    update_engine_client
 
 # Health
 PRODUCT_PACKAGES += \
-    android.hardware.health@2.1-impl \
-    android.hardware.health@2.1-service
+    android.hardware.health@2.0-impl \
+    android.hardware.health@2.0-service
 
 # Fastbootd
 PRODUCT_PACKAGES += \
