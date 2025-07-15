@@ -6,9 +6,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/twrp_java.mk
+    $(LOCAL_DIR)/lineage_java.mk
 
 COMMON_LUNCH_CHOICES := \
-    twrp_java-user \
-    twrp_java-userdebug \
-    twrp_java-eng
+    lineage_java-user \
+    lineage_java-userdebug \
+    lineage_java-eng
