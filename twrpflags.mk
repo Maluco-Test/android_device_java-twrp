@@ -26,6 +26,7 @@ TW_OVERRIDE_SYSTEM_PROPS := "ro.build.version.sdk"
 BOARD_BUILD_SYSTEM_ROOT_IMAGE := false
 TW_DEFAULT_BRIGHTNESS := 500
 TW_MAX_BRIGHTNESS := 4000
+TW_NO_FASTBOOT_BOOT := true
 
 # resetprop & repacktools
 TW_INCLUDE_RESETPROP := true
