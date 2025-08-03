@@ -79,6 +79,7 @@ endif
 
 
 # Platform
+BOARD_USES_UNISOC_HARDWARE := true
 TARGET_BOARD_PLATFORM := ums512
 
 
@@ -121,6 +122,8 @@ TW_RECOVERY_ADDITIONAL_RELINK_LIBRARY_FILES += \
     $(TARGET_OUT_SHARED_LIBRARIES)/libcap.so \
     $(TARGET_OUT_SHARED_LIBRARIES)/libion.so \
     $(TARGET_OUT_SHARED_LIBRARIES)/libxml2.so
+
+
 
 # Inherit partitions flags
 include $(DEVICE_PATH)/partition.mk
