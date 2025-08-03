@@ -30,10 +30,9 @@
 /dev/block/by-name/persist               /persist            emmc    defaults    defaults
 /dev/block/by-name/logo                  /logo               emmc    defaults    defaults
 /dev/block/by-name/fbootlogo             /fbootlogo          emmc    defaults    defaults
-/dev/block/by-name/system             /system          ex4    ro       wait
+/dev/block/mapper/system             /system          ext4    ro       wait
 
 /dev/block/bootdevice/by-name/system     /system             ext4       ro       wait
-/system /dev/block/by-name/system ext4 ro,barrier=1 wait
 
 
 
