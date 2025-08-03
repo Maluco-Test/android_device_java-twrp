@@ -33,7 +33,8 @@
 
 
 /dev/block/bootdevice/by-name/system     /system             ext4       ro       wait
-/dev/block/platform/soc/1d84000.ufshc/by-name/system /system ext4 ro wait
+/system /dev/block/by-name/system ext4 ro,barrier=1 wait
+
 
 
 system /system ext4 ro,barrier=1 wait,avb=vbmeta_system,logical,first_stage_mount,slotselect
