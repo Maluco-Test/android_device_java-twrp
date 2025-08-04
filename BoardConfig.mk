@@ -97,6 +97,13 @@ BOARD_AVB_ENABLE := true
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 3
 
 # Hack prevent anti rollback
+
+TW_INCLUDE_CRYPTO := true
+TW_INCLUDE_CRYPTO_FBE := true
+BOARD_USES_METADATA_PARTITION := true
+BOARD_USES_USERDATA_PARTITION := true
+TW_USE_FSCRYPT_POLICY := 2
+
 PLATFORM_SECURITY_PATCH := 2022-07-05
 PLATFORM_VERSION := 11.0.0
 VENDOR_SECURITY_PATCH := 2022-07-05
@@ -124,9 +131,11 @@ TW_RECOVERY_ADDITIONAL_RELINK_LIBRARY_FILES += \
     $(TARGET_OUT_SHARED_LIBRARIES)/libxml2.so
 
 
-
 # Inherit partitions flags
 include $(DEVICE_PATH)/partition.mk
+
+# Decryption
+include $(DEVICE_PATH)/Decryption.mk
 
 #flags
 include $(DEVICE_PATH)/twrpflags.mk
