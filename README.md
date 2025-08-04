@@ -31,8 +31,8 @@ Front Camera | 13 MP, f/2.2, (wide), 1/3.1", 1.12µm
 - [X] vibration
 - [ ] fastbootD
 - [X] reboot to system
-- [ ] decryption
-- [ ] flash zip
+- [X] decryption
+- [ ] flash zip(kernel)
 
 # base for this TWRP tree
 
