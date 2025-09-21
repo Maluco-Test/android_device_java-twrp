@@ -30,7 +30,7 @@ Front Camera | 13 MP, f/2.2, (wide), 1/3.1", 1.12µm
 - [X] Format data(pbrp)
 - [X] vibration
 - [ ] fastbootD
-- [X] reboot to system
+- [ ] reboot to system
 - [X] decryption
 - [ ] flash zip(kernel)
 - [ ] root
