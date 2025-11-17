@@ -443,3 +443,5 @@ on property:ro.bootmode=factorytest
 
 on property:ro.bootmode=factorytest && property:ro.debuggable=0
     setprop sys.usb.config vser
+
+
