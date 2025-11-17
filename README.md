@@ -29,12 +29,12 @@ Front Camera | 13 MP, f/2.2, (wide), 1/3.1", 1.12µm
 - [X] advanced Wipe
 - [X] Format data(pbrp)
 - [X] vibration
-- [ ] fastbootD
+- [X] fastbootD
 - [ ] reboot to system
 - [X] decryption
 - [ ] flash zip(kernel)
 - [ ] root
-
+- [ ] brilho(portuguese)
 
 # base for this TWRP tree
 
